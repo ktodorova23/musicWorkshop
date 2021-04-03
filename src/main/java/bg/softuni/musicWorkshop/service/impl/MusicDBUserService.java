@@ -1,4 +1,4 @@
-package bg.softuni.musicWorkshop.service;
+package bg.softuni.musicWorkshop.service.impl;
 
 import bg.softuni.musicWorkshop.model.entities.UserEntity;
 import bg.softuni.musicWorkshop.repositories.UserRepository;

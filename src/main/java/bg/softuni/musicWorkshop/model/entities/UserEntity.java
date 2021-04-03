@@ -17,6 +17,11 @@ public class UserEntity extends BaseEntity {
     @ManyToMany(fetch = FetchType.EAGER)
     private List<UserRoleEntity> roles;
 
+    public UserEntity(String name, String password) {
+        this.name = name;
+        this.password = password;
+    }
+
     public String getName() {
         return this.name;
     }

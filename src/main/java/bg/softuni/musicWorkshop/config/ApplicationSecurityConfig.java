@@ -1,6 +1,6 @@
 package bg.softuni.musicWorkshop.config;
 
-import bg.softuni.musicWorkshop.service.MusicDBUserService;
+import bg.softuni.musicWorkshop.service.impl.MusicDBUserService;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
