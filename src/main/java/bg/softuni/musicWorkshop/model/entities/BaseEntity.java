@@ -1,4 +1,4 @@
-package bg.softuni.musicWorkshop.models.entities;
+package bg.softuni.musicWorkshop.model.entities;
 
 import javax.persistence.*;
 

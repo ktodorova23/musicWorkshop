@@ -1,4 +1,4 @@
-package bg.softuni.musicWorkshop.models.entities;
+package bg.softuni.musicWorkshop.model.entities;
 
 import java.util.List;
 import javax.persistence.Entity;
@@ -15,7 +15,7 @@ public class UserEntity extends BaseEntity {
 
     //if OneToMany there will be a unique key in the rel table
     @ManyToMany(fetch = FetchType.EAGER)
-    private List<UserRoleEntity> userRoles;
+    private List<UserRoleEntity> roles;
 
     public String getName() {
         return this.name;
@@ -33,11 +33,11 @@ public class UserEntity extends BaseEntity {
         this.password = password;
     }
 
-    public List<UserRoleEntity> getUserRoles() {
-        return this.userRoles;
+    public List<UserRoleEntity> getRoles() {
+        return this.roles;
     }
 
-    public void setUserRoles(List<UserRoleEntity> userRoles) {
-        this.userRoles = userRoles;
+    public void setRoles(List<UserRoleEntity> roles) {
+        this.roles = roles;
     }
 }

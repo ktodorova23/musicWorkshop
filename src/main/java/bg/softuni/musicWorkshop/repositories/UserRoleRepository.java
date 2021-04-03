@@ -1,6 +1,6 @@
-package bg.softuni.musicWorkshop.models.repositories;
+package bg.softuni.musicWorkshop.repositories;
 
-import bg.softuni.musicWorkshop.models.entities.UserRoleEntity;
+import bg.softuni.musicWorkshop.model.entities.UserRoleEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

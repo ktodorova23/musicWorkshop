@@ -1,9 +1,13 @@
-package bg.softuni.musicWorkshop.models.repositories;
+package bg.softuni.musicWorkshop.repositories;
 
-import bg.softuni.musicWorkshop.models.entities.UserEntity;
+import bg.softuni.musicWorkshop.model.entities.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+
 @Repository
 public interface UserRepository extends JpaRepository<UserEntity, Long> {
+
+    Optional<UserEntity> findByName(String name);
 }
