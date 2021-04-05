@@ -1,8 +1,10 @@
 package bg.softuni.musicWorkshop.service.impl;
 
+import bg.softuni.musicWorkshop.model.binding.UserRegistrationBindingModel;
 import bg.softuni.musicWorkshop.model.entities.UserEntity;
 import bg.softuni.musicWorkshop.model.entities.UserRoleEntity;
 import bg.softuni.musicWorkshop.model.entities.enums.UserRoleEnum;
+import bg.softuni.musicWorkshop.model.service.UserRegistrationServiceModel;
 import bg.softuni.musicWorkshop.repositories.UserRepository;
 import bg.softuni.musicWorkshop.repositories.UserRoleRepository;
 import bg.softuni.musicWorkshop.service.UserService;
@@ -39,5 +41,12 @@ public class UserServiceImpl implements UserService {
 
             userRepository.saveAll(List.of(admin, userEntity));
         }
+    }
+
+    @Override
+    public void registerAndLogin(UserRegistrationServiceModel serviceModel) {
+        throw new UnsupportedOperationException("NOT YET");
+
+        // TODO: finish method implementation
     }
 }

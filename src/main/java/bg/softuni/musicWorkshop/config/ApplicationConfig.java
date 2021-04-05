@@ -1,5 +1,6 @@
 package bg.softuni.musicWorkshop.config;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -10,6 +11,11 @@ public class ApplicationConfig {
     @Bean
     public PasswordEncoder create() {
         return new BCryptPasswordEncoder();
+    }
+
+    @Bean
+    public ModelMapper modelMapper() {
+        return new ModelMapper();
     }
 
 }
