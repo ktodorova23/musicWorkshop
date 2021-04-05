@@ -22,6 +22,9 @@ public class UserEntity extends BaseEntity {
         this.password = password;
     }
 
+    public UserEntity() {
+    }
+
     public String getName() {
         return this.name;
     }

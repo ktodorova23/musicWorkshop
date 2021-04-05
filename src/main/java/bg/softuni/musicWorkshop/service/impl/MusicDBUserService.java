@@ -2,7 +2,6 @@ package bg.softuni.musicWorkshop.service.impl;
 
 import bg.softuni.musicWorkshop.model.entities.UserEntity;
 import bg.softuni.musicWorkshop.repositories.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
@@ -18,7 +17,6 @@ import java.util.stream.Collectors;
 public class MusicDBUserService implements UserDetailsService {
     private final UserRepository userRepository;
 
-    @Autowired
     public MusicDBUserService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
